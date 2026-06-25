@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyTeam</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              livvic: ['Livvic', 'sans-serif'],
+            },
+            colors: {
+              'primary-teal': '#014e56',
+              'secondary-teal': '#012f34',
+              'accent-pink': '#f67e7e',
+              'light-teal': '#79c8c7',
+              'light-gray': '#ccd5d6',
+              'dark-bg': '#002529',
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="font-livvic bg-white m-0 p-0 box-border">
+
+    <div class="bg-primary-teal pt-[73px] pb-[140px] md:pb-[250px] relative overflow-hidden">
+
+      <header class="mb-[80px] md:mb-[129px]">
+        <div class="max-w-[1130px] w-full mx-auto px-5 flex items-center justify-between">
+          <div class="max-w-[380px] w-full flex items-center gap-[40px] md:gap-[80px]">
+            <a class="block" href="#">
+              <img src="images/header/logo.svg" alt="logo" />
+            </a>
+            <ul class="hidden min-[522px]:flex gap-10">
+              <li><a class="font-600 text-18 text-white hover:text-accent-pink transition-colors duration-300" href="#">home</a></li>
+              <li><a class="font-600 text-18 text-white hover:text-accent-pink transition-colors duration-300" href="index2.html">about</a></li>
+            </ul>
+          </div>
+
+          <button class="hidden min-[522px]:block w-[143px] h-[48px] border-2 border-white rounded-[24px] font-semibold text-[18px] text-white bg-transparent hover:bg-white hover:text-secondary-teal transition-all duration-300">
+            <a href="css/index.html" class="text-inherit block w-full h-full leading-[44px] text-center">contact us</a>
+          </button>
+
+          <button id="menu-btn" class="block min-[522px]:hidden bg-transparent">
+            <img src="images/hero/menu.svg" alt="menu" />
+          </button>
+        </div>
+      </header>
+
+      <section class="relative">
+        <img class="absolute top-0 left-0 hidden min-[1081px]:block" src="images/hero/group.svg" alt="img" />
+
+        <div class="max-w-[1130px] w-full mx-auto px-5 flex flex-col md:flex-row items-center gap-[30px] text-center md:text-left relative z-10">
+          <h1 class="font-bold text-[48px] leading-[54px] sm:text-[64px] sm:leading-[70px] md:text-[100px] md:leading-[100px] text-white max-w-[635px]">
+            Find the best <span class="text-accent-pink">talent</span>
+          </h1>
+
+          <div class="max-w-[445px] flex flex-col items-center md:items-start">
+            <div class="hidden md:block w-50 h-1 bg-light-teal mb-[79px]"></div>
+            <p class="font-semibold text-[18px] leading-[28px] text-white">
+              Finding the right people and building high performing teams can be hard. Most companies aren’t tapping into the abundance of global talent. We’re about to change that.
+            </p>
+          </div>
+
+          <img class="absolute top-[150px] sm:top-[155px] md:top-[350px] right-0 max-w-[100px] md:max-w-none" src="images/hero/doira-karochi.svg" alt="img" />
+        </div>
+      </section>
+    </div>
+
+    <main>
+
+      <section class="flex flex-col items-center md:items-end bg-secondary-teal relative overflow-hidden">
+        <div class="max-w-[1130px] w-full mx-auto px-5 py-[140px] flex flex-col md:flex-row items-center justify-between gap-10">
+          <div class="max-w-[445px] text-center md:text-left">
+            <div class="w-50 h-1 bg-accent-pink mb-[54px] mx-auto md:mx-0"></div>
+            <h2 class="font-bold text-[48px] leading-[48px] text-white">Build & manage distributed teams like no one else.</h2>
+          </div>
+
+          <ul class="max-w-[540px] w-full flex flex-col gap-[32px] mt-[54px]">
+            <li class="flex gap-[23px] items-start text-left">
+              <div class="relative w-[56px] h-[56px] shrink-0">
+                <img class="absolute top-0 left-0 w-[56px] h-[56px] z-10" src="images/succes/a.png" alt="person" />
+                <div class="w-[56px] h-[56px] rounded-full bg-[#2c6269] absolute right-0 bottom-0"></div>
+              </div>
+              <div>
+                <h3 class="font-bold text-[18px] text-accent-pink mb-[10px]">Experienced Individuals</h3>
+                <p class="font-semibold text-[15px] text-light-gray leading-[25px]">
+                  Our network is made up of highly experienced professionals who are passionate about what they do.
+                </p>
+              </div>
+            </li>
+
+            <li class="flex gap-[23px] items-start text-left">
+              <div class="relative w-[56px] h-[56px] shrink-0">
+                <img class="absolute top-0 left-0 w-[56px] h-[56px] z-10" src="images/succes/b.png" alt="icon" />
+                <div class="w-[56px] h-[56px] rounded-full bg-[#2c6269] absolute right-0 bottom-0"></div>
+              </div>
+              <div>
+                <h3 class="font-bold text-[18px] text-accent-pink mb-[10px]">Easy to Implement</h3>
+                <p class="font-semibold text-[15px] text-light-gray leading-[25px]">
+                  Our processes have been refined over years of implementation meaning our teams always deliver.
+                </p>
+              </div>
+            </li>
+
+            <li class="flex gap-[23px] items-start text-left">
+              <div class="relative w-[56px] h-[56px] shrink-0">
+                <img class="absolute top-0 left-0 w-[56px] h-[56px] z-10" src="images/succes/c.png" alt="progress" />
+                <div class="w-[56px] h-[56px] rounded-full bg-[#2c6269] absolute right-0 bottom-0"></div>
+              </div>
+              <div>
+                <h3 class="font-bold text-[18px] text-accent-pink mb-[10px]">Enhanced Productivity</h3>
+                <p class="font-semibold text-[15px] text-light-gray leading-[25px]">
+                  Our customized platform with in-built analytics helps you manage your distributed teams.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <img class="absolute top-0 right-0 build__img" src="images/build/aylana.png" alt="aylana" />
+      </section>
+
+      <section class="bg-[#004047] relative flex items-end py-[140px] overflow-hidden">
+        <img class="absolute top-0 left-0" src="images/succes/ss.png" alt="">
+        <div class="max-w-[1130px] w-full mx-auto px-5 text-center z-10">
+          <h2 class="font-bold text-[48px] text-white mb-[56px]">
+            Delivering real results for top <br class="hidden md:inline" /> companies. Some of our <span class="text-light-teal">success stories.</span>
+          </h2>
+          <ul class="flex flex-col lg:flex-row items-center justify-center gap-10">
+            <li class="max-w-[350px] w-full relative pt-5">
+              <img class="absolute left-1/2 -translate-x-1/2 -top-[20px] z-0" src="images/succes/icon-quotes.svg" alt="" />
+              <p class="relative z-10 text-[15px] leading-[25px] text-white mb-6">
+                “The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”
+              </p>
+              <h3 class="font-bold text-[18px] text-light-teal mb-[2px]">Kady Baker</h3>
+              <p class="font-medium text-[13px] italic text-white mb-8">Product Manager at Bookmark</p>
+              <img class="mx-auto" src="images/succes/kady.svg" alt="" />
+            </li>
+            <li class="max-w-[350px] w-full relative pt-5">
+              <img class="absolute left-1/2 -translate-x-1/2 -top-[20px] z-0" src="images/succes/icon-quotes.svg" alt="" />
+              <p class="relative z-10 text-[15px] leading-[25px] text-white mb-6">
+                “The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”
+              </p>
+              <h3 class="font-bold text-[18px] text-light-teal mb-[2px]">Aiysha Reese</h3>
+              <p class="font-medium text-[13px] italic text-white mb-8">Founder of Manage</p>
+              <img class="mx-auto" src="images/succes/aisha.svg" alt="" />
+            </li>
+            <li class="max-w-[350px] w-full relative pt-5">
+              <img class="absolute left-1/2 -translate-x-1/2 -top-[20px] z-0" src="images/succes/icon-quotes.svg" alt="" />
+              <p class="relative z-10 text-[15px] leading-[25px] text-white mb-6">
+                “The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”
+              </p>
+              <h3 class="font-bold text-[18px] text-light-teal mb-[2px]">Arthur Clarke</h3>
+              <p class="font-medium text-[13px] italic text-white mb-8">Co-founder of MyPhysio</p>
+              <img class="mx-auto" src="images/succes/arthur.svg" alt="" />
+            </li>
+          </ul>
+        </div>
+        <img class="absolute bottom-0 right-0" src="images/build/as.png" alt="">
+      </section>
+
+      <section class="relative pt-[76px] pb-[106px] bg-accent-pink overflow-hidden">
+        <img class="absolute left-0 bottom-[-11%] sm:bottom-[-14%] md:bottom-[-16%] w-[200px] h-[224px] object-contain" src="images/succes/img.svg" alt="" />
+        <div class="max-w-[1130px] w-full mx-auto px-5">
+          <div class="max-w-[917px] mx-auto text-center flex items-center justify-center">
+            <div class="flex flex-col sm:flex-row items-center justify-between w-full gap-[20px] sm:gap-10 md:gap-[50px] text-secondary-teal">
+              <h2 class="font-bold text-[30px] sm:text-[35px] md:text-[38px]">Ready to get started?</h2>
+              <button class="w-[153px] h-[48px] border-2 border-secondary-teal rounded-[34px] bg-transparent font-semibold text-[18px] text-secondary-teal hover:bg-secondary-teal hover:text-accent-pink transition-all duration-300">
+                contact us
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-12 bg-dark-bg text-white">
+      <div class="max-w-[1130px] w-full mx-auto px-5">
+        <div class="flex flex-col sm:flex-row justify-between flex-wrap gap-10 items-center sm:items-start text-center sm:text-left">
+
+          <div class="flex flex-col items-center sm:items-start gap-6">
+            <a href="#"><img src="images/footer/myteam.svg" alt="logo" /></a>
+            <div class="flex gap-10 font-semibold text-[18px]">
+              <a class="hover:text-accent-pink transition-colors" href="#">home</a>
+              <a class="hover:text-accent-pink transition-colors" href="#">about</a>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-1 text-[#949292] text-[15px]">
+            <p>987 Hillcrest Lane</p>
+            <p>Irvine, CA</p>
+            <p>California 92714</p>
+            <p class="mt-2 text-white">Call Us : 949-833-7432</p>
+          </div>
+
+          <div class="flex flex-col items-center sm:items-end justify-between min-h-[100px]">
+            <div class="flex gap-4">
+              <img class="cursor-pointer hover:opacity-80" src="images/header/facebook.svg" alt="facebook" />
+              <img class="cursor-pointer hover:opacity-80" src="images/header/pinterest.svg" alt="pinterest" />
+              <img class="cursor-pointer hover:opacity-80" src="images/header/twitter.svg" alt="twitter" />
+            </div>
+            <p class="text-[#949292] text-[14px] mt-6 sm:mt-0">Copyright 2020. All Rights Reserved</p>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

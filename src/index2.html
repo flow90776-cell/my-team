@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>my team</title>
+		<link rel="stylesheet" href="output.css" />
+	</head>
+	<body>
+		<!-- HEADER START -->
+		<header class="bg-[#014E56] py-[24px]">
+			<div class="max-w-[1440px] w-full mx-auto px-5 flex items-center justify-between">
+				<div class="flex items-center gap-[40px]">
+					<img src="images/footer/myteam.svg" alt="team" class="w-[160px] h-auto" />
+
+					<div class="hidden sm:flex items-center gap-[40px]">
+						<h3 class="text-white font-semibold text-[18px] leading-[28px] cursor-pointer"><a href="index.html">home</a></h3>
+						<h3 class="text-white font-semibold text-[18px] leading-[28px] cursor-pointer"><a href="index2.html">about</a></h3>
+					</div>
+				</div>
+
+				<div class="hidden sm:block">
+					<button
+						class="text-white text-[18px] font-semibold py-[10px] px-[20px] rounded-[24px] border-2 hover:bg-[#1f29e0] transition duration-300 ease-in-out active:scale-95">
+						Contact
+					</button>
+				</div>
+
+				<button id="menu-btn" class="sm:hidden flex flex-col gap-[5px]">
+					<span class="w-[24px] h-[3px] bg-white rounded"></span>
+					<span class="w-[24px] h-[3px] bg-white rounded"></span>
+					<span class="w-[24px] h-[3px] bg-white rounded"></span>
+				</button>
+			</div>
+
+			<div id="mobile-menu" class="hidden sm:hidden px-5 pt-5 pb-4">
+				<div class="flex flex-col gap-4">
+					<h3 class="text-white font-semibold text-[18px] leading-[28px] cursor-pointer"><a href="index.html">home</a></h3>
+					<h3 class="text-white font-semibold text-[18px] leading-[28px] cursor-pointer"><a href="index2.html">about</a></h3>
+					<button
+						class="w-fit text-white text-[18px] font-semibold py-[10px] px-[20px] rounded-[24px] border-2 hover:bg-[#1f29e0] transition duration-300 ease-in-out active:scale-95">
+						Contact
+					</button>
+				</div>
+			</div>
+		</header>
+
+		<script>
+			const menuBtn = document.getElementById('menu-btn');
+			const mobileMenu = document.getElementById('mobile-menu');
+
+			menuBtn.addEventListener('click', () => {
+				mobileMenu.classList.toggle('hidden');
+			});
+		</script>
+		<!-- HEADER END -->
+
+		<main class="bg-[#014E56]">
+			<section>
+				<div class="max-w-[1440px] w-full mx-auto px-5 pt-[120px] flex justify-between items-center gap-[40px]">
+					<div>
+						<h2 class="font-bold text-[64px] text-[#FFFFFF] leading-[100px]">About</h2>
+					</div>
+					<div class="max-w-[730px]">
+						<div class="w-[50px] h-[4px] bg-[#F67E7E] mb-[40px]"></div>
+						<p class="font-semibold text-[18px] text-[#FFFFFF] leading-[28px]">
+							We help companies build dynamic teams made up of top global talent. Using our network of passionate professionals we
+							drive innovation and deliver incredible outcomes. Talented, diverse teams shape the best products and experiences.
+							We’ll bring those teams to you.
+						</p>
+					</div>
+					<div>
+						<img src="images/hero/zaynap-bilan-qolin.svg" alt="zaynap-bilan-qolin" />
+					</div>
+				</div>
+			</div>
+			</section>
+		</main>
+	</body>
+</html>
